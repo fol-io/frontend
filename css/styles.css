@@ -139,3 +139,7 @@ hr {
 .close:hover,
 .close:focus {
   color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
