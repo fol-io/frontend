@@ -14,3 +14,7 @@ body {
 .Header1 {
     font-family: Helvetica-Bold;
     font-size: 8vw;
+    color: #CDCDCD;
+    text-shadow: 0 2px 4px #000000;
+    display: flex;
+    justify-content: flex-start;
