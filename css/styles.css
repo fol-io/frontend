@@ -148,3 +148,8 @@ hr {
   clear: both;
   display: table;
 }
+
+img {
+    
+    position: absolute;
+    right: 10vw;
