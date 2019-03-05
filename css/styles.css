@@ -67,3 +67,6 @@ button {
 #Main-Button{
     background-image: radial-gradient(200% -200%, #000000 -10%, #309975 80%);
     border: 1px solid #000000;
+    box-shadow: 0 1px 4px 1px #000000;
+    border-radius: 23px;
+    padding: 2vh 4vw;
