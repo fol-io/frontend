@@ -6,3 +6,7 @@ body {
     background-image:
         linear-gradient(to bottom right, transparent, 50%, white 49%),
         radial-gradient(circle at top, #A09F2B, black);
+    background-repeat: no-repeat;
+  }
+
+  * {box-sizing: border-box;}
