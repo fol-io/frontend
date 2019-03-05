@@ -3,3 +3,6 @@ body {
     height:100vh;
     display: flex;
     flex-direction: column;
+    background-image:
+        linear-gradient(to bottom right, transparent, 50%, white 49%),
+        radial-gradient(circle at top, #A09F2B, black);
