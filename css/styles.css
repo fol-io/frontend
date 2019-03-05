@@ -158,3 +158,9 @@ img {
     height: 68vh;
     width: auto\9; 
 }
+
+
+/* background-image: url('css/closet.png'); */
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
