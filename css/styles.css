@@ -153,3 +153,8 @@ img {
     
     position: absolute;
     right: 10vw;
+    bottom: -1.3vh;
+    max-width: 30vw;
+    height: 68vh;
+    width: auto\9; 
+}
