@@ -38,33 +38,36 @@ body {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+    display: inline-block;
+    margin: 5px 0 22px 0;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    background: #f1f1f1;
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Set a style for all buttons */
-button {
+/* button:not(:nth-child(n-1)) {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
+  padding: 2vh 5vw;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+} */
 
-#Main-Button{
+
+
+/* OLD BUTTON, Potentially */
+/* #Main-Button{
     background-image: radial-gradient(200% -200%, #000000 -10%, #309975 80%);
     border: 1px solid #000000;
     box-shadow: 0 1px 4px 1px #000000;
@@ -75,24 +78,124 @@ button {
     font-size: 2vw;
     font-family: Helvetica, sans-serif
     font-color: #cdcdcd;
-}
+} */
+/* 
+
+
+ /* NEW BUTTON */
+ .Main-Button-Content {
+   position: absolute;
+   top: 50vh;
+   left: 50vw;
+   -webkit-transform: translate(-220%, 320%);
+           transform: translate(-220%, 320%);
+ }
+ .Main-Button-Content p {
+   text-decoration: none;
+   font-size: 1.2vw;
+   margin-top: 1.5vh;
+ }
+ .Main-Button-Content .Main-Button {
+    text-transform: uppercase;
+    color: black;
+    height: 5vh;
+    width: 15vw;
+    background-color: #CDCDCD;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 1vw;
+    position: relative;
+    overflow: hidden;
+ }
+ .Main-Button-Content .Main-Button span {
+    margin-top: -1vh;
+    display: block;
+   
+ }
+ .Main-Button-Content .Main-Button:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -37%;
+    left: -2px;
+    border-top: 3vh solid transparent;
+    border-bottom: 2.9vh solid transparent;
+    border-right: 2.9vh solid #A09F2B;
+    -webkit-transform: rotate(-45deg) translateX(-50px);
+            transform: rotate(-45deg) translateX(-50px);
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+ }
+ .Main-Button-Content .Main-Button:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -37%;
+    right: -2px;
+    border-top: 3vh solid transparent;
+    border-bottom: 2.9vh solid transparent;
+    border-right: 2.9vh solid #A09F2B;
+    -webkit-transform: rotate(135deg) translateX(-50px);
+            transform: rotate(135deg) translateX(-50px);
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+ }
+ 
+ 
+ .Main-Button-Content .Main-Button:hover:before {
+    -webkit-transform: rotate(-45deg) translateX(0);
+            transform: rotate(-45deg) translateX(0);
+ }
+ .Main-Button-Content .Main-Button:hover:after {
+    -webkit-transform: rotate(135deg) translateX(0);
+            transform: rotate(135deg) translateX(0);
+ }
 
 button:hover {
   opacity:1;
 }
 
-/* Extra styles for the cancel button */
+/* Styles for the cancel button */
 .cancelbutton {
-  padding: 14px 20px;
+  padding: 2vh 5vw;
   background-color: #f44336;
 }
 
-/* Float cancel and signup buttons and add an equal width */
+/* Floats signup and cancel buttons and adds an equal width */
 .cancelbutton, .signupbutton {
   float: left;
   width: 50%;
 }
 
+.signupbutton {
+    background-color: #4CAF50;
+    color: white;
+    width: 50%;
+    margin: 8px 0;
+    border: none;
+    padding: 2vh 5vw;
+    cursor: pointer;
+    opacity: 0.9;
+    
+}
+
+.cancelbutton {
+    background-color: rgb(255, 68, 81);
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    padding: 2vh 5vw;
+    margin: 8px 0;
+    border: none;
+    opacity: 0.9;
+}
 /* Add padding to container elements */
 .container {
   padding: 10vh;
@@ -100,57 +203,56 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 7vh;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 1; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 7vh;
 }
 
-/* Modal Content/Box */
+/* Modal Content Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* Style the horizontal ruler */
+/* Styles horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
  
 /* The Close Button (x) */
 .close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
 }
 
 .close:hover,
 .close:focus {
-  color: #f44336;
-  cursor: pointer;
+    color: #f44336;
+    cursor: pointer;
 }
 
 /* Clear floats */
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 img {
-    
     position: absolute;
     right: 10vw;
     bottom: -1.3vh;
@@ -162,7 +264,7 @@ img {
 
 /* background-image: url('css/closet.png'); */
 
-/* Change styles for cancel button and signup button on extra small screens */
+/* Change style for the signup and cancel button on small screens */
 @media screen and (max-width: 300px) {
   .cancelbutton, .signupbutton {
      width: 100%;
