@@ -14,7 +14,7 @@ body {
 .Header1 {
     font-family: "Dosis";
     font-size: 9vw;
-    color: #CDCDCD;
+    color: #FFF;
     text-shadow: 0 2px 4px #000000;
     display: flex;
     justify-content: flex-start;
@@ -27,7 +27,7 @@ body {
 .Header2 {
     font-family: "Dosis";
     font-size: 5.5vw;
-    color: #CDCDCD;
+    color: #FFF;
     text-shadow: 0 2px 4px #000000;
     display: flex;
     flex-direction: column;
