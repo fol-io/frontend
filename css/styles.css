@@ -1,4 +1,7 @@
-body {
+@media only screen 
+  and (min-width: 601px) 
+  and (max-width: 3000px){
+    body {
     margin:0;
     height:100vh;
     display: flex;
@@ -7,267 +10,753 @@ body {
         linear-gradient(to bottom right, transparent, 50%, white 49%),
         radial-gradient(circle at top, #A09F2B, black);
     background-repeat: no-repeat;
-  }
-
-  * {box-sizing: border-box;}
-
-.Header1 {
-    font-family: "Dosis";
-    font-size: 9vw;
-    color: #FFF;
-    text-shadow: 0 2px 4px #000000;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-content: space-between;
-    margin-top: -2vw;
-    padding-left: 1vw;
-}
-
-.Header2 {
-    font-family: "Dosis";
-    font-size: 5.5vw;
-    color: #FFF;
-    text-shadow: 0 2px 4px #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1.2vw;
-    margin-top: 0vh;
-
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    display: inline-block;
-    margin: 5px 0 22px 0;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for all buttons */
-/* button:not(:nth-child(n-1)) {
-  background-color: #4CAF50;
-  color: white;
-  padding: 2vh 5vw;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-} */
+    }
 
 
 
-/* OLD BUTTON, Potentially */
-/* #Main-Button{
-    background-image: radial-gradient(200% -200%, #000000 -10%, #309975 80%);
-    border: 1px solid #000000;
-    box-shadow: 0 1px 4px 1px #000000;
-    border-radius: 23px;
-    padding: 2vh 4vw;
-    margin:  -5vh 10px;
-    margin-left: 13px;
-    font-size: 2vw;
-    font-family: Helvetica, sans-serif
-    font-color: #cdcdcd;
-} */
-/* 
+    .Header1 {
+        font-family: "Dosis";
+        font-size: 9vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: space-between;
+        margin-top: -2vw;
+        padding-left: 1vw;
+    } 
 
+    .Header2 {
+        font-family: "Dosis";
+        font-size: 5.5vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1.2vw;
+        margin-top: 0vh;
 
- /* NEW BUTTON */
- .Main-Button-Content {
-   position: absolute;
-   top: 50vh;
-   left: 50vw;
-   -webkit-transform: translate(-218%, 380%);
-           transform: translate(-218%, 380%);
- }
- .Main-Button-Content p {
-   text-decoration: none;
-   font-size: 1.2vw;
-   margin-top: 1.5vh;
- }
- .Main-Button-Content .Main-Button {
-    text-transform: uppercase;
-    color: black;
-    height: 5vh;
-    width: 15vw;
-    background-color: #CDCDCD;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2.5px;
-    font-size: 1vw;
-    position: relative;
-    overflow: hidden;
- }
- .Main-Button-Content .Main-Button span {
-    margin-top: -1vh;
-    display: block;
-   
- }
- .Main-Button-Content .Main-Button:before {
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    position: absolute;
-    bottom: -37%;
-    left: -2px;
-    border-top: 3vh solid transparent;
-    border-bottom: 2.9vh solid transparent;
-    border-right: 2.9vh solid #A09F2B;
-    -webkit-transform: rotate(-45deg) translateX(-50px);
-            transform: rotate(-45deg) translateX(-50px);
-    transition: -webkit-transform 200ms ease;
-    transition: transform 200ms ease;
-    transition: transform 200ms ease, -webkit-transform 200ms ease;
- }
- .Main-Button-Content .Main-Button:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -37%;
-    right: -2px;
-    border-top: 3vh solid transparent;
-    border-bottom: 2.9vh solid transparent;
-    border-right: 2.9vh solid #A09F2B;
-    -webkit-transform: rotate(135deg) translateX(-50px);
-            transform: rotate(135deg) translateX(-50px);
-    transition: -webkit-transform 200ms ease;
-    transition: transform 200ms ease;
-    transition: transform 200ms ease, -webkit-transform 200ms ease;
- }
- 
- 
- .Main-Button-Content .Main-Button:hover:before {
-    -webkit-transform: rotate(-45deg) translateX(0);
-            transform: rotate(-45deg) translateX(0);
- }
- .Main-Button-Content .Main-Button:hover:after {
-    -webkit-transform: rotate(135deg) translateX(0);
-            transform: rotate(135deg) translateX(0);
- }
+    }
 
-button:hover {
-  opacity:1;
-}
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        display: inline-block;
+        margin: 5px 0 22px 0;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        background: #f1f1f1;
+    }
 
-/* Styles for the cancel button */
-.cancelbutton {
-  padding: 2vh 5vw;
-  background-color: #f44336;
-}
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
 
-/* Floats signup and cancel buttons and adds an equal width */
-.cancelbutton, .signupbutton {
-  float: left;
-  width: 50%;
-}
-
-.signupbutton {
+    /* Set a style for all buttons */
+    /* button:not(:nth-child(n-1)) {
     background-color: #4CAF50;
     color: white;
-    width: 50%;
+    padding: 2vh 5vw;
     margin: 8px 0;
     border: none;
-    padding: 2vh 5vw;
     cursor: pointer;
+    width: 100%;
     opacity: 0.9;
+    } */
+
+
+
+    /* OLD BUTTON, Potentially */
+    /* #Main-Button{
+        background-image: radial-gradient(200% -200%, #000000 -10%, #309975 80%);
+        border: 1px solid #000000;
+        box-shadow: 0 1px 4px 1px #000000;
+        border-radius: 23px;
+        padding: 2vh 4vw;
+        margin:  -5vh 10px;
+        margin-left: 13px;
+        font-size: 2vw;
+        font-family: Helvetica, sans-serif
+        font-color: #cdcdcd;
+    } */
+    /* 
+
+
+    /* NEW BUTTON */
+    .Main-Button-Content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    -webkit-transform: translate(-218%, 280%);
+            transform: translate(-218%, 280%);
+    }
+    .Main-Button-Content p {
+    text-decoration: none;
+    font-size: 1.2vw;
+    margin-top: 1.5vh;
+    }
+    .Main-Button-Content .Main-Button {
+        text-transform: uppercase;
+        color: black;
+        height: 5vh;
+        width: 15vw;
+        background-color: #CDCDCD;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2.5px;
+        font-size: 1vw;
+        position: relative;
+        overflow: hidden;
+    }
+    .Main-Button-Content .Main-Button span {
+        margin-top: -1vh;
+        display: block;
     
-}
+    }
+    .Main-Button-Content .Main-Button:before {
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        position: absolute;
+        bottom: -37%;
+        left: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(-45deg) translateX(-50px);
+                transform: rotate(-45deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+    }
+    .Main-Button-Content .Main-Button:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -37%;
+        right: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(135deg) translateX(-50px);
+                transform: rotate(135deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+    }
+    
+    
+    .Main-Button-Content .Main-Button:hover:before {
+        -webkit-transform: rotate(-45deg) translateX(0);
+                transform: rotate(-45deg) translateX(0);
+    }
+    .Main-Button-Content .Main-Button:hover:after {
+        -webkit-transform: rotate(135deg) translateX(0);
+                transform: rotate(135deg) translateX(0);
+    }
 
-.cancelbutton {
-    background-color: rgb(255, 68, 81);
-    color: white;
-    cursor: pointer;
-    width: 50%;
+    button:hover {
+    opacity:1;
+    }
+
+    /* Styles for the cancel button */
+    .cancelbutton {
     padding: 2vh 5vw;
-    margin: 8px 0;
-    border: none;
-    opacity: 0.9;
+    background-color: #f44336;
+    }
+
+    /* Floats signup and cancel buttons and adds an equal width */
+    .cancelbutton, .signupbutton {
+    float: left;
+    width: 50%;
+    }
+
+    .signupbutton {
+        background-color: #4CAF50;
+        color: white;
+        width: 50%;
+        margin: 8px 0;
+        border: none;
+        padding: 2vh 5vw;
+        cursor: pointer;
+        opacity: 0.9;
+        
+    }
+
+    .cancelbutton {
+        background-color: rgb(255, 68, 81);
+        color: white;
+        cursor: pointer;
+        width: 50%;
+        padding: 2vh 5vw;
+        margin: 8px 0;
+        border: none;
+        opacity: 0.9;
+    }
+    /* Add padding to container elements */
+    .container {
+    padding: 10vh;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 1; /* Sit on top */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #474e5d;
+        padding-top: 7vh;
+    }
+
+    /* Modal Content Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Styles horizontal ruler */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        right: 35px;
+        top: 15px;
+        color: #f1f1f1;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    img {
+        position: absolute;
+        right: 10vw;
+        bottom: -1.3vh;
+        max-width: auto;
+        height: 68%;
+        width: auto\9; 
+    }
+
+
+    /* background-image: url('css/closet.png'); */
+
+
+
+
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+    /* Portrait and Landscape
+    @media only screen 
+    and (min-width: 375px) 
+    and (max-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+
+    } */
 }
-/* Add padding to container elements */
-.container {
-  padding: 10vh;
+/* Portrait */
+@media only screen 
+  and (min-width: 0px) 
+  and (max-width: 600px)
+  and (max-height: 820px){ 
+    .cancelbutton, .signupbutton {
+        width: 100%;
+    }
+    body {
+        margin:0;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        background-image:
+            linear-gradient(to bottom right, transparent, 100%, white -50%),
+            radial-gradient(circle at top, #A09F2B, black);
+        background-repeat: no-repeat;
+      }
+    
+    .Header1 {
+        font-family: "Dosis";
+        font-size: 12vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: space-between;
+        margin-top: -2vw;
+        padding-left: 12vw;
+    } 
+    
+    .Header2 {
+        font-family: "Dosis";
+        font-size: 8.5vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25.2vw;
+        margin-top: -3vh;
+    
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        display: inline-block;
+        margin: 5px 0 22px 0;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    
+     /* NEW BUTTON */
+     .Main-Button-Content {
+       position: absolute;
+       top: 50vh;
+       left: 50vw;
+       -webkit-transform: translate(-55%, -370%);
+               transform: translate(-55%, -370%);
+     }
+     .Main-Button-Content p {
+       text-decoration: none;
+       font-size: 2.2vw;
+       margin-top: 1.8vh;
+     }
+     .Main-Button-Content .Main-Button {
+        text-transform: uppercase;
+        color: black;
+        height: 6vh;
+        width: 15vw;
+        background-color: #CDCDCD;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2.5px;
+        font-size: 1vw;
+        position: relative;
+        overflow: hidden;
+     }
+     .Main-Button-Content .Main-Button span {
+        margin-top: -1vh;
+        display: block;
+       
+     }
+     .Main-Button-Content .Main-Button:before {
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        position: absolute;
+        bottom: -37%;
+        left: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(-45deg) translateX(-50px);
+                transform: rotate(-45deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+     }
+     .Main-Button-Content .Main-Button:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -37%;
+        right: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(135deg) translateX(-50px);
+                transform: rotate(135deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+     }
+     
+     
+     .Main-Button-Content .Main-Button:hover:before {
+        -webkit-transform: rotate(-45deg) translateX(0);
+                transform: rotate(-45deg) translateX(0);
+     }
+     .Main-Button-Content .Main-Button:hover:after {
+        -webkit-transform: rotate(135deg) translateX(0);
+                transform: rotate(135deg) translateX(0);
+     }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Styles for the cancel button */
+    .cancelbutton {
+      padding: 2vh 5vw;
+      background-color: #f44336;
+    }
+    
+    /* Floats signup and cancel buttons and adds an equal width */
+    .cancelbutton, .signupbutton {
+      float: left;
+      width: 50%;
+    }
+    
+    .signupbutton {
+        background-color: #4CAF50;
+        color: white;
+        width: 50%;
+        margin: 8px 0;
+        border: none;
+        padding: 2vh 5vw;
+        cursor: pointer;
+        opacity: 0.9;
+        
+    }
+    
+    .cancelbutton {
+        background-color: rgb(255, 68, 81);
+        color: white;
+        cursor: pointer;
+        width: 50%;
+        padding: 2vh 5vw;
+        margin: 8px 0;
+        border: none;
+        opacity: 0.9;
+    }
+    /* Add padding to container elements */
+    .container {
+      padding: 10vh;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 1; /* Sit on top */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #474e5d;
+        padding-top: 7vh;
+    }
+    
+    /* Modal Content Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* Styles horizontal ruler */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+     
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        right: 35px;
+        top: 15px;
+        color: #f1f1f1;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    img {
+        position: absolute;
+        right: 17vw;
+        bottom: -6.5vh;
+        max-width: auto;
+        height: 65%;
+        width: auto\9; 
+    }
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    z-index: 1; /* Sit on top */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 7vh;
+
+@media only screen and (min-height: 823px) { 
+    .cancelbutton, .signupbutton {
+        width: 100%;
+    }
+    body {
+        margin:0;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        background-image:
+            linear-gradient(to bottom right, transparent, 100%, white -50%),
+            radial-gradient(circle at top, #A09F2B, black);
+        background-repeat: no-repeat;
+      }
+    
+    .Header1 {
+        font-family: "Dosis";
+        font-size: 12vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: space-between;
+        margin-top: -2vw;
+        padding-left: 12vw;
+    } 
+    
+    .Header2 {
+        font-family: "Dosis";
+        font-size: 8.5vw;
+        color: #FFF;
+        text-shadow: 0 2px 4px #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25.2vw;
+        margin-top: -3vh;
+    
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        display: inline-block;
+        margin: 5px 0 22px 0;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    
+     /* NEW BUTTON */
+     .Main-Button-Content {
+       position: absolute;
+       top: 50vh;
+       left: 50vw;
+       -webkit-transform: translate(-55%, -300%);
+               transform: translate(-55%, -300%);
+     }
+     .Main-Button-Content p {
+       text-decoration: none;
+       font-size: 2.2vw;
+       margin-top: 1.8vh;
+     }
+     .Main-Button-Content .Main-Button {
+        text-transform: uppercase;
+        color: black;
+        height: 6vh;
+        width: 15vw;
+        background-color: #CDCDCD;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2.5px;
+        font-size: 1vw;
+        position: relative;
+        overflow: hidden;
+     }
+     .Main-Button-Content .Main-Button span {
+        margin-top: -1vh;
+        display: block;
+       
+     }
+     .Main-Button-Content .Main-Button:before {
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        position: absolute;
+        bottom: -37%;
+        left: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(-45deg) translateX(-50px);
+                transform: rotate(-45deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+     }
+     .Main-Button-Content .Main-Button:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -37%;
+        right: -2px;
+        border-top: 3vh solid transparent;
+        border-bottom: 2.9vh solid transparent;
+        border-right: 2.9vh solid #A09F2B;
+        -webkit-transform: rotate(135deg) translateX(-50px);
+                transform: rotate(135deg) translateX(-50px);
+        transition: -webkit-transform 200ms ease;
+        transition: transform 200ms ease;
+        transition: transform 200ms ease, -webkit-transform 200ms ease;
+     }
+     
+     
+     .Main-Button-Content .Main-Button:hover:before {
+        -webkit-transform: rotate(-45deg) translateX(0);
+                transform: rotate(-45deg) translateX(0);
+     }
+     .Main-Button-Content .Main-Button:hover:after {
+        -webkit-transform: rotate(135deg) translateX(0);
+                transform: rotate(135deg) translateX(0);
+     }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Styles for the cancel button */
+    .cancelbutton {
+      padding: 2vh 5vw;
+      background-color: #f44336;
+    }
+    
+    /* Floats signup and cancel buttons and adds an equal width */
+    .cancelbutton, .signupbutton {
+      float: left;
+      width: 50%;
+    }
+    
+    .signupbutton {
+        background-color: #4CAF50;
+        color: white;
+        width: 50%;
+        margin: 8px 0;
+        border: none;
+        padding: 2vh 5vw;
+        cursor: pointer;
+        opacity: 0.9;
+        
+    }
+    
+    .cancelbutton {
+        background-color: rgb(255, 68, 81);
+        color: white;
+        cursor: pointer;
+        width: 50%;
+        padding: 2vh 5vw;
+        margin: 8px 0;
+        border: none;
+        opacity: 0.9;
+    }
+    /* Add padding to container elements */
+    .container {
+      padding: 10vh;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 1; /* Sit on top */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #474e5d;
+        padding-top: 7vh;
+    }
+    
+    /* Modal Content Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* Styles horizontal ruler */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+     
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        right: 35px;
+        top: 15px;
+        color: #f1f1f1;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    img {
+        position: absolute;
+        right: 17vw;
+        bottom: -6.5vh;
+        max-width: auto;
+        height: 65%;
+        width: auto\9; 
+    }
 }
 
-/* Modal Content Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Styles horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
- 
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    font-size: 40px;
-    font-weight: bold;
-    right: 35px;
-    top: 15px;
-    color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-    color: #f44336;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-img {
-    position: absolute;
-    right: 10vw;
-    bottom: -1.3vh;
-    max-width: 30vw;
-    height: 68vh;
-    width: auto\9; 
-}
-
-
-/* background-image: url('css/closet.png'); */
-
-/* Change style for the signup and cancel button on small screens */
-@media screen and (max-width: 300px) {
-  .cancelbutton, .signupbutton {
-     width: 100%;
-  }
-}
